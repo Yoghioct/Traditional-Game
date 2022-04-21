@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/styles/style.css" rel="stylesheet" />
+
+  <title>Binar challange FW C3 - Login</title>
+</head>
+
+<body>
+
+  <body class="text-white w-100">
+    <!-- Navbar -->
+    <header>
+      <nav class="nav_text navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <span>YOGHIO</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/games">PLAYNOW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">WORK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">ABOUT ME</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-lg-0 d-flex">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/signup">SIGN UP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/login">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Start Signup -->
+      <div id="main" class="cover_Background">
+      <div class="row m-auto p-xl-5">
+        <div class="col-5 footer_images p-xl-5">
+          <img loading="lazy" width="auto" height="auto" src="/images/death-stranding.png" alt="" />
+        </div>
+        <div class="col-7 footer_newsletter align-self-center">
+          <div class="row newsletter_Text">
+            <p>Please enter your login and password!</p>
+            <h2>LOGIN</h2>
+          </div>
+          <form class="row g-3 newsletter_Form" action="/login" method="post">
+            <div class="col-12">
+              <input type="email" name="email" class="w-100 h-100 form-control" placeholder="" />
+              <label class="inputLabel" for="email">Your email address</label>
+            </div>
+            <div class="col-12">
+                <input type="password" name="password" class="w-100 h-100 form-control" placeholder="" />
+                <label class="inputLabel" for="password">Your password</label>
+              </div>
+            <div class="col-4 text-center">
+              <button type="submit" class="w-100 h-100 btn btn-primary orangeButton fw-bold">
+                Login
+              </button>
+            </div>
+            <div>Don't have an account? <a href="/signup">Register Here</a></div>
+          </form>
+        </div>
+      </div>
+      </div>    
+    <!-- End of Signup -->
+
+    <!-- Footer -->
+    <footer id="footer" class="cover_Background cover_Shadow d-flex">
+      <div class="container align-self-center">
+        <div class="row footer_nav m-auto d-grid">
+          <div class="col footer_navLeft">
+            <ul class="d-flex">
+              <li>
+                <a href="#main">MAIN</a>
+              </li>
+              <li>
+                <a href="#about">ABOUT</a>
+              </li>
+              <li>
+                <a href="#gamefeatures">GAME FEATURES</a>
+              </li>
+              <li>
+                <a href="#systemrequirements">SYSTEM REQUIREMENTS</a>
+              </li>
+              <li>
+                <a href="#quotes">QUOTES</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col footer_navRight d-flex">
+            <a href="">
+              <img src="/svg/facebook.svg" alt="facebook" />
+            </a>
+            <a href="">
+              <img src="/svg/twitter.svg" alt="twitter" />
+            </a>
+            <a href="">
+              <img src="/svg/youtube.svg" alt="youtube" />
+            </a>
+            <a href="">
+              <img src="/svg/twitch.svg" alt="twitch" />
+            </a>
+          </div>
+        </div>
+        <div class="row footer_text d-flex align-items-center w-100 m-auto">
+          <div class="col">
+            <p>&COPY; 2021 Your Games.Inc. All Rights Reserved</p>
+          </div>
+          <div class="col footer_misc">
+            <a href="">PRIVACY POLICY</a>
+            <span>|</span>
+            <a href="">TERMS OF SERVICES </a>
+            <span>|</span>
+            <a href="">CODE OF CONDUCT </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
